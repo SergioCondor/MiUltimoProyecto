@@ -10,4 +10,8 @@ class UsuariosController extends Controller
   {
     return view('layouts.usuarios');
   }
+  public function store()
+  {
+    return view('layouts.usuarios');
+  }
 }

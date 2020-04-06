@@ -25,5 +25,6 @@ Route::get('/usuarios', function () {
 Route::get('/usuarios','UsuariosController@index');
 Route::group(['prefix'=>'admin','as'=>'admin'], function(){
   Route::get('/','AdminController@index');
+  Route::post('/usuarios','UsuariosController@index');
 });
 Route::get('/inventario','InventarioController@index');

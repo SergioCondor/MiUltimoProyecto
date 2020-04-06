@@ -280,9 +280,48 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Usuarios</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#modalAgregar">
+              <i class="fas fa-download fa-sm text-white-50"></i> Agregar usuario
+            </a>
           </div>
 
+          <!-- Modal -->
+  <div class="modal fade" id="modalAgregar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Agregar Usuario</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form class="" action="/admin/usuarios" method="post">
+
+
+        <div class="modal-body">
+              <div class="form-group">
+                <input type="text" class="form-control" name="nombre" placeholder="Nombre" value="">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email" value="">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" name="pass1" placeholder="Nombre" value="">
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control" name="pass2" placeholder="Confirmar password" value="">
+              </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
 

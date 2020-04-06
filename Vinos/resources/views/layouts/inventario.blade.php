@@ -280,9 +280,69 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Inventario</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#modalAgregar"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
+          <!-- Modal -->
+  <div class="modal fade" id="modalAgregar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Agregar vinos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form class="" action="/admin/usuarios" method="post">
+
+
+        <div class="modal-body">
+              <div class="form-group">
+                <input type="text" class="form-control" name="nombre" placeholder="Nombre" value="">
+              </div>
+              <div class="form-group">
+                <input type="image" class="form-control" name="img" placeholder="Imagen" value="">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="stock" placeholder="Stock" value="">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="codigo" placeholder="Codigo" value="">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="color" placeholder="Color" value="">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="grado" placeholder="Grado" value="">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="TiempoBarrica" placeholder="Tiempo Barrica" value="">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="TiempoBotella" placeholder="Tiempo Botella" value="">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="TiempoTotal" placeholder="Tiempo Total" value="">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="Crianza" placeholder="Crianza" value="">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="Reserva" placeholder="Reserva" value="">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="GranReserva" placeholder="Gran Reserva" value="">
+              </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
 
