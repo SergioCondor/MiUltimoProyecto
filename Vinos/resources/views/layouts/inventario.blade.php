@@ -293,15 +293,16 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form class="" action="/admin/usuarios" method="post">
+        <form class="" action="/admin/inventario" method="post">
 
-
+          @csrf
         <div class="modal-body">
               <div class="form-group">
                 <input type="text" class="form-control" name="nombre" placeholder="Nombre" value="">
               </div>
+
               <div class="form-group">
-                <input type="image" class="form-control" name="img" placeholder="Imagen" value="">
+                <input type="text" class="form-control" name="img" placeholder="Imagen" value="">
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" name="stock" placeholder="Stock" value="">
@@ -333,11 +334,14 @@
               <div class="form-group">
                 <input type="text" class="form-control" name="GranReserva" placeholder="Gran Reserva" value="">
               </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="azucarresidual" placeholder="Azucar residual" value="">
+              </div>
 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
         </div>
         </form>
       </div>

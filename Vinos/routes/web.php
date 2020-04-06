@@ -14,17 +14,17 @@
 Route::get('/', function () {
     return view('layouts.main');
 });
-
 /*Route::get('/inventario', function () {
     return view('layouts.inventario');
 });
-
 Route::get('/usuarios', function () {
     return view('layouts.usuarios');
 });*/
 Route::get('/usuarios','UsuariosController@index');
 Route::group(['prefix'=>'admin','as'=>'admin'], function(){
   Route::get('/','AdminController@index');
-  Route::post('/usuarios','UsuariosController@index');
+//  Route::post('/usuarios','UsuariosController@store');
+  Route::resource('usuarios','UsuariosController');
+  Route::resource('inventario','InventarioController');
 });
 Route::get('/inventario','InventarioController@index');
